@@ -28,14 +28,14 @@
     <section id="Sobre">
         <h2>Sobre mim</h2>
 
-        <img src="C:\Users\anlum\Pictures\Xaiomi_GT_X4_08.08.24\IMG_20230514_124449.jpg" alt="Imagem de foto de perfil" width="400"
+        <img src="C:\Users\anlum\Pictures\Xaiomi_GT_X4_08.08.24\IMG_20230514_124449.jpg" alt="Imagem de foto de perfil" width="340"
         height="341" />
             title="Imagem de perfil de Andrea">
 
         <article>
 
             <p>
-                Olá! Eu sou Andrea, formada em engenharia química. Trabalho num laboratório... adicionado mais um texto...mais um teste
+                Olá! Eu sou Andrea, formada em engenharia química. Hoje trabalho num laboratório... mas sou formada em engenharia, em Ciências dos materiais, em mecânica, entre outros. Morei por sete meses na Coréia do Sul, aprendi muito sobre processos industriais. Hoje, busco mudar de área, ter independência financeira e ter uma nova profissão, por isso que estudo front-end.
             </p>
         </article>
 
@@ -62,7 +62,7 @@
             <h3>Portifólio</h3>
 
             <p>
-                Este foi o primeiro desenvolvido, estudante front-end.
+                Este foi o primeiro desenvolvido, estudante front-end. Da para melhorar isso né!? Então vamos melhorando!!
             </p>
         </article>
 
@@ -77,17 +77,42 @@
 
             <p>Tem um projeto em mente? Entre em contato</p>
 
-            <form action=""></form>
+            <form action="">
 
                 <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome"> 
+                <input type="text" id="nome" name="nome" required> <br> <!--br quebra a linha-->
 
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email"  required> <br>
+                
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"  required> <br>
 
-            <address>
-                Email: <a href="mailto:anlumoso@gmail.com">anlu@gmail.com</a> <br> <!-- pula linha-->
-                whats: <a href="tel:554799951-1818">47 99951-1818</a>
+                <label for="endereço">Endereço: </label>
+                <input type="end" id="endereço" name="endereço" required> <br>
 
-            </address>
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="dúvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="25" rows="10" required></textarea> <br>
+
+                <input type="checkbox" id="inscrição" name="inscrição" >
+                <label for="inscrição">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem"> <br>
+
+            </form> 
+
+            
 
         </section>
     </footer>
